@@ -39,7 +39,7 @@
 	<div class="space-y-7 p-4">
 		<div class="flex items-center justify-between">
 			<div class="space-y-2">
-				<div class="text-5xl font-bold text-green-500">
+				<div class="text-5xl font-bold text-orange-500">
 					{todo.title}
 				</div>
 

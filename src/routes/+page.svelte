@@ -47,6 +47,21 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Svelte Todos</title>
+	<meta name="description" content="Simple Todo App built with Svelte and Firebase" />
+	<meta name="keywords" content="Svelte, Firebase, Todo, App" />
+	<meta name="author" content="hnamhocit" />
+	<meta name="google-site-verification" content="y1sBRAxSthsoGxe9RZi0DmorMKPBoRF-FvefQd0Ur4c" />
+	<meta property="og:title" content="Svelte Todos" />
+	<meta property="og:description" content="Simple Todo App built with Svelte and Firebase" />
+	<meta property="og:image" content="/images/logo.png" />
+	<meta property="og:url" content="https://svelte-todos-one.vercel.app" />
+	<meta property="og:type" content="website" />
+	<meta property="og:locale" content="vi_VN" />
+	<meta property="og:site_name" content="Svelte Todos" />
+</svelte:head>
+
 {#if $todosStore.isLoading}
 	<Loading />
 {:else}
