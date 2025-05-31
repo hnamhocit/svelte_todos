@@ -52,7 +52,6 @@
 	<meta name="description" content="Simple Todo App built with Svelte and Firebase" />
 	<meta name="keywords" content="Svelte, Firebase, Todo, App" />
 	<meta name="author" content="hnamhocit" />
-	<meta name="google-site-verification" content="y1sBRAxSthsoGxe9RZi0DmorMKPBoRF-FvefQd0Ur4c" />
 	<meta property="og:title" content="Svelte Todos" />
 	<meta property="og:description" content="Simple Todo App built with Svelte and Firebase" />
 	<meta property="og:image" content="/images/logo.png" />
