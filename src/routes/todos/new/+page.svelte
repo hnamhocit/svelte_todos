@@ -87,13 +87,14 @@
 						bind:value={$formData.title}
 						placeholder="Title"
 						class="block resize-none bg-transparent text-5xl font-bold outline-none"
+						spellcheck="false"
 					></textarea>
 				{/snippet}
 			</FormControl>
 			<FormFieldErrors />
 		</FormField>
 
-		<div class="flex gap-3">
+		<div class="flex flex-col gap-3">
 			<FormField {form} name="description" class="flex-1">
 				<FormControl>
 					{#snippet children()}
@@ -101,14 +102,21 @@
 							bind:value={$formData.description}
 							placeholder="Description"
 							rows="12"
-							class="block resize-none bg-transparent outline-none"
+							class="block w-full resize-none bg-transparent outline-none"
+							spellcheck="false"
 						></textarea>
 					{/snippet}
 				</FormControl>
 				<FormFieldErrors />
 			</FormField>
 
-			<MarkdownPreview class="flex-1" markdown={$formData.description} />
+			<div class="flex flex-col gap-3">
+				<div class="text-muted-foreground text-sm">Preview</div>
+				<MarkdownPreview
+					class="min-h-40 w-full max-w-none overflow-x-hidden rounded-md border p-3"
+					markdown={$formData.description}
+				/>
+			</div>
 		</div>
 
 		<Input bind:value={deadline} type="datetime-local" placeholder="Deadline" />
